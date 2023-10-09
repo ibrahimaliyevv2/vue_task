@@ -3,7 +3,7 @@ import { GChart } from "vue-google-charts";
 
 export const type = "ColumnChart";
 export const data = [
-  ["Sales", "Flexy", "MaterialPro"],
+  ["Graph", "Type1", "Type2"],
   ["2017", 817, 700],
   ["2018", 379, 269],
   ["2019", 269, 189],

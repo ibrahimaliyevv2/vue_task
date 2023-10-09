@@ -1,11 +1,13 @@
+
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 import { useDisplay } from "vuetify";
 import Sidebar from "~~/components/layoutComponents/sidebar/Sidebar.vue";
 import Header from "~~/components/layoutComponents/header/Header.vue";
-useMeta({
-  title: "Prosol | Dashboard",
-});
+// useMeta({
+//   title: "Prosol | Dashboard",
+// });
+
 
 const drawer = ref(undefined || true);
 const innerW = window.innerWidth;

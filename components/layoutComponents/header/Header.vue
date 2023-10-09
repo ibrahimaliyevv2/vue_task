@@ -1,16 +1,8 @@
-<script setup>
+<script setup lang="ts">
 const userprofile = ref([
   {
     title: "My Profile",
     desc: "Account Settings",
-  },
-  {
-    title: "My Inbox",
-    desc: "Messages & Emails",
-  },
-  {
-    title: "My Tasks",
-    desc: "To-do and Daily Tasks",
   },
 ]);
 </script>
@@ -27,7 +19,7 @@ const userprofile = ref([
         :ripple="false"
       >
         <v-avatar size="35">
-          <img src="/images/users/user2.jpg" width="35" alt="Julia" />
+          <img src="/images/users/6.jpg" width="35" alt="Julia" />
         </v-avatar>
       </v-btn>
     </template>

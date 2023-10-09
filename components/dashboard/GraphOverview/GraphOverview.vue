@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted } from "vue";
+import { onMounted, ref } from "vue";
 import GoogleChart from "./Gchart";
 const elementVisible = ref(false);
 
@@ -14,12 +14,11 @@ onMounted(() => {
   <!-- ------------------------------------ -->
 
   <v-card>
+    <div class="header-main">
+          <h3 class="text-h6 title font-weight-medium py-4 pl-4 text-white">Graph Overview</h3>
+        </div>
     <v-card-text>
       <div class="d-sm-flex align-center">
-        <div>
-          <h3 class="text-h6 title font-weight-medium">Sales Overview</h3>
-          <h5 class="subtitle">Ample Admin Vs Pixel Admin</h5>
-        </div>
         <v-spacer></v-spacer>
         <div class="ml-auto">
           <div class="d-flex align-center">
@@ -28,7 +27,7 @@ onMounted(() => {
                 <span class="text-overline">
                   <i class="mdi mdi-brightness-1 mx-1"></i>
                 </span>
-                <span class="font-weight-regular">Flexy</span>
+                <span class="font-weight-regular">Type1</span>
               </span>
             </div>
             <div class="d-flex align-center px-2">
@@ -36,7 +35,7 @@ onMounted(() => {
                 <span class="text-overline">
                   <i class="mdi mdi-brightness-1 mx-1"></i>
                 </span>
-                <span class="font-weight-regular">MaterialPro</span>
+                <span class="font-weight-regular">Type2</span>
               </span>
             </div>
           </div>
@@ -46,3 +45,9 @@ onMounted(() => {
     </v-card-text>
   </v-card>
 </template>
+
+<style lang="scss">
+.header-main{
+  background-color: #1ca7c4;
+}
+</style>

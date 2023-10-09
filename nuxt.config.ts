@@ -1,10 +1,10 @@
-import { defineNuxtConfig } from "nuxt";
+import { defineNuxtConfig } from "nuxt/config";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   ssr: false,
   build: {
-    extractCSS: false,
+    // extractCSS: false,
     transpile: ["vuetify"],
   },
   css: ["@/assets/scss/style.scss"],
